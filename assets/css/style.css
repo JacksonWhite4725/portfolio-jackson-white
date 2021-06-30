@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+/* Define color variables */
+:root {
+    --primary: #053742;
+    --secondary: #39A2DB;
+    --tertiary: #A2DBFA;
+    --dark: #222831;
+    --light: #E8F0F2;
+}
+
 /* Styles entire page */
 * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    color: var(--secondary);
+    background-color: var(--light);
+    line-height: 1.5;
 }
 
 /* Begin section for navigation bar styling */
@@ -13,22 +27,24 @@ nav li, header a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 24px;
-    background-color: #053742;
-    color: aliceblue;
+    background-color: var(--primary);
+    color: var(--light);
     text-decoration: none;
 }
 
 header {
-    background: #053742;
+    background: var(--primary);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 30px 10%;
 }
 
 .nav-links {
     list-style: none;
-    background-color: #053742
+    background-color: var(--primary);
 }
 
 .nav-links li {
@@ -41,7 +57,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #39A2DB;
+    color: var(--secondary);
 }
 
 #name {
@@ -54,3 +70,23 @@ header {
     color: #FFC947;
 }
 /* End of navigation bar styling */
+
+/* Start of profile image styling */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    background-color: var(--light);
+    background-image: url(../images/background-nyc.jpg);
+    background-position: center;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5%;
+    border: 5px solid var(--dark);
+}
+/* End of profile image styling */
