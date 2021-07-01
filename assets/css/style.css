@@ -17,7 +17,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: var(--secondary);
+    color: var(--dark);
     background-color: var(--light);
     line-height: 1.5;
 }
@@ -26,7 +26,7 @@ body {
 nav li, header a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2vw;
     background-color: var(--primary);
     color: var(--light);
     text-decoration: none;
@@ -96,3 +96,73 @@ header {
     transition: all 0.3s ease 0s;
 }
 /* End of profile image styling */
+
+/* Beginning of main page with primary content styling */
+
+main {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section-left {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section-left > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--secondary);
+    color: var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+    font-family: 'Roboto Mono', monospace;
+}
+  
+.page-section-left > div {
+    flex: 0 0 77%;
+}
+  
+.page-section-left p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-section-right {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section-right > h2 {
+    flex: 0 0 20%;
+    text-align: left;
+    padding-left: 15px;
+    border-left: 4px solid var(--secondary);
+    color: var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+    font-family: 'Roboto Mono', monospace;
+}
+  
+.page-section-right > div {
+    flex: 0 0 77%;
+}
+  
+.page-section-right p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
