@@ -166,3 +166,64 @@ main {
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Styles the work section, utilizes some code ideas from example project */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 0px 10px;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 150%;
+    border: 5px solid var(--primary);
+    filter: grayscale(80%);
+    opacity: 0.5;
+    transition: all 0.3s ease 0s;
+}
+
+.project div {
+    background-color: var(--light);
+    padding: 10px;
+}
+
+.project h3 {
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+.project:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.project:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.recipe-book {
+    background-image: url("../images/recipe.png");
+}
+
+.investment-tracker {
+    background-image: url("../images/investment.png");
+}
+
+.brewing-calculator {
+    background-image: url("../images/brewing.png");
+}
+
+.workout-developer {
+    background-image: url("../images/workout.png");
+}
+
