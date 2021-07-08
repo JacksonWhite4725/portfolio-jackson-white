@@ -227,3 +227,26 @@ main {
     background-image: url("../images/workout.png");
 }
 
+/* Contact section styling, also influenced by the example code */
+
+#contact-me address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#contact-me a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    background-color: var(--light);
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+#contact-me a:hover {
+    color: var(--secondary);
+}
