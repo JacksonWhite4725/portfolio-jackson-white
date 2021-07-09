@@ -88,12 +88,14 @@ header {
     width: 50%;
     border-radius: 5%;
     border: 5px solid var(--dark);
-}
-
-.center-image:hover {
     opacity: 0.5;
     filter: grayscale(100%);
     transition: all 0.3s ease 0s;
+}
+
+.center-image:hover {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 /* End of profile image styling */
 
@@ -249,4 +251,40 @@ main {
 
 #contact-me a:hover {
     color: var(--secondary);
+}
+
+/* Media Query styling for interactive design */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .page-section-left > h2, 
+    .page-section-left > div, 
+    .page-section-right > h2, 
+    .page-section-right > div {
+        flex: inherit;
+    }
+
+
+    .page-section-left > h2,
+    .page-section-right > h2 {
+        border-right: none;
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #contact-me address {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
 }
