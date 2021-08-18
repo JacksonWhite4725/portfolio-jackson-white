@@ -213,20 +213,20 @@ main {
     opacity: 1;
 }
 
-.recipe-book {
-    background-image: url("../images/recipe.png");
+.movie-theater {
+    background-image: url("../images/movie-theater.png");
 }
 
-.investment-tracker {
-    background-image: url("../images/investment.png");
+.coding-quiz {
+    background-image: url("../images/coding.png");
 }
 
-.brewing-calculator {
-    background-image: url("../images/brewing.png");
+.password-generator {
+    background-image: url("../images/password.png");
 }
 
-.workout-developer {
-    background-image: url("../images/workout.png");
+.weather {
+    background-image: url("../images/weather.png");
 }
 
 /* Contact section styling, also influenced by the example code */
